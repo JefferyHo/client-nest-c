@@ -1,0 +1,51 @@
+@import '../../assets/css/variable.scss';
+
+.apps {
+  padding: 20px;
+
+  .title {
+    margin-bottom: 1rem;
+    position: relative;
+    padding-left: 0.6rem;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      bottom: 8px;
+      left: 0;
+      background-color: $primary-bg-color;
+      width: 6px;
+      border-radius: 3px;
+    }
+  }
+
+  .form-item {
+    margin-bottom: 0.8rem;
+    border-bottom: 1px solid $border-color-1;
+    padding-bottom: 0.2rem;
+
+    &:nth-child(4),
+    &:nth-child(5) {
+      border-bottom: none;
+    }
+  }
+
+  .upload-wpt {
+    display: flex;
+
+    .img,
+    .img-add {
+      width: 25vw;
+      height: 25vw;
+      border: 1px solid $border-color-1;
+      border-radius: 8px;
+      margin-right: 1rem;
+    }
+
+    .img-add  {
+      line-height: 25vw;
+      text-align: center;
+    }
+  }
+}

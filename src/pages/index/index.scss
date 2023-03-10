@@ -1,0 +1,85 @@
+.app-item {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.8rem;
+  margin: 3vw;
+
+  .app-item__image {
+    width: 44vw;
+  }
+
+  .app-item__cont {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .app-item__left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .app-item__right {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    align-items: center;
+    justify-content: space-around;
+    transform: rotate(90deg);
+    letter-spacing: 0.1rem;
+    margin-right: -2vw;
+  }
+
+  .app-item__date {
+    font-size: 0.5rem;
+    color: #aaa;
+  }
+}
+
+.cont-wpt {
+  display: flex;
+  flex-wrap: wrap;
+  height: calc(100vh - 12vw);
+  align-content: baseline;
+}
+
+.index-modal {
+  width: 100%;
+  position: fixed;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.23);
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  top: 0;
+
+  .btn-wpt {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+  }
+
+  text {
+    height: 10vw;
+    line-height: 10vw;
+    width: 100%;
+    text-align: center;
+    background: #fff;
+
+    &:first-child {
+      border-bottom: 1px solid #ddd;
+    }
+  }
+}
+
+.add-wpt {
+  width: 100%;
+
+  .add-btn {
+    width: 28vw;
+    height: 10vw;
+    line-height: 10vw;
+    float: right;
+    margin: 2vw 2vw 0;
+  }
+}

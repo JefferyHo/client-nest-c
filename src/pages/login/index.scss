@@ -1,0 +1,34 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+
+  .title {
+    margin: 16vh 0 6vh;
+    font-size: 1.5rem;
+    font-style: italic;
+  }
+  
+  .form-body {
+
+    .form-body__label input {
+      margin-bottom: 2vh;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .tip {
+      font-size: 0.5rem;
+      color: #aaa;
+    }
+
+    .btn-submit {
+      margin-top: 10vh;
+    }
+
+    .msg {
+      color: red;
+      font-size: 0.6rem;
+    }
+  }
+}
